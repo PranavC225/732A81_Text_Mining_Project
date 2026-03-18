@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "question": "How many queue points do you earn per day when registered with a housing company?",
+    "gold_answer": "You earn one queue point per day when registered in the housing queue system.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 2,
+    "question": "What is the approximate starting rent for a student corridor room?",
+    "gold_answer": "The rent starts at approximately SEK 3,900 per month, with electricity, heating and internet included.",
+    "source": "liu_accommodation",
+    "category": "costs_logistics"
+  },
+  {
+    "id": 3,
+    "question": "What should I do if I cannot find accommodation before the semester starts?",
+    "gold_answer": "You can stay in temporary accommodation such as youth hostels or Airbnb. KOMBO also offers emergency lodging between 1 August and 30 September for admitted students.",
+    "source": "liu_accommodation",
+    "category": "emergency_temp"
+  },
+  {
+    "id": 4,
+    "question": "What is the maximum number of apartments you can apply for per landlord?",
+    "gold_answer": "You can apply for a maximum of 5 different options per landlord.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 5,
+    "question": "What happens if I decline a housing offer from a landlord?",
+    "gold_answer": "If you decline or do not respond to a housing offer, you risk getting struck off the housing queue and won't be able to register for any other accommodation.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 6,
+    "question": "Does Linköping University guarantee accommodation for degree students?",
+    "gold_answer": "No, Linköping University does not generally offer student accommodation for degree students. They need to join the queue systems for accommodation themselves.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 7,
+    "question": "Which housing company has an agreement with LiU for exchange students in Linköping?",
+    "gold_answer": "LiU has an agreement with Heimstaden in Linköping for exchange student accommodation.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 8,
+    "question": "When will exchange students be notified about their room allocation for the autumn semester?",
+    "gold_answer": "Exchange students arriving for the autumn semester will be notified by May or June.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 9,
+    "question": "What is a student corridor room and what does it typically include?",
+    "gold_answer": "A student corridor room is usually about 20 square metres with a private bathroom. Several rooms share a kitchen and living room. The room is fully furnished with a bed, desk, lamps and fire alarm. Rent starts at approximately SEK 3,900 per month including electricity, heating and internet.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 10,
+    "question": "Can I travel between Linköping and Norrköping for free as a LiU student?",
+    "gold_answer": "Yes, you can travel for free between the cities using the LiU campus bus.",
+    "source": "liu_accommodation",
+    "category": "linkoping_vs_norrkoping"
+  },
+  {
+    "id": 11,
+    "question": "Is it advisable to live in Stockholm and commute to LiU for full-time studies?",
+    "gold_answer": "No, it is not advisable to live in Stockholm or Gothenburg and believe you will be able to study full-time at LiU.",
+    "source": "liu_accommodation",
+    "category": "linkoping_vs_norrkoping"
+  },
+  {
+    "id": 12,
+    "question": "What is KOMBO and how can it help students?",
+    "gold_answer": "KOMBO is a student-run association at LiU that works with all aspects of student accommodation including legal advocacy, student representation, and advertising private accommodation. It also provides guides to help international students find housing and avoid scams.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 13,
+    "question": "Between what dates does KOMBO offer emergency housing?",
+    "gold_answer": "KOMBO offers emergency lodging between 1 August and 30 September for admitted students who have nowhere to stay when the semester starts.",
+    "source": "liu_accommodation",
+    "category": "emergency_temp"
+  },
+  {
+    "id": 14,
+    "question": "Can KOMBO provide emergency lodging for family members of students?",
+    "gold_answer": "No, KOMBO can only help with emergency lodging for admitted students and cannot provide lodging for family members.",
+    "source": "liu_accommodation",
+    "category": "emergency_temp"
+  },
+  {
+    "id": 15,
+    "question": "What is Studentbo and where does it operate?",
+    "gold_answer": "Studentbo is a student accommodation provider in Norrköping, provided by Norrköping municipality. It offers accommodation close to the city center and Campus Norrköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 16,
+    "question": "Does Studentbo offer a housing guarantee for Campus Norrköping students?",
+    "gold_answer": "Yes, Studentbo guarantees accommodation for students accepted to a course or programme on Campus Norrköping, provided they study at least two semesters and do not already live in Norrköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 17,
+    "question": "What is Colonia and who is eligible to live there?",
+    "gold_answer": "Colonia is a student complex on Campus Valla that is student-led and arranges activity teams to help international students interact. It is only available to students who have a Swedish personal number.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 18,
+    "question": "What is Stångåstaden?",
+    "gold_answer": "Stångåstaden is a municipal housing company in Linköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 19,
+    "question": "Where can I find subleases or shared accommodation in Linköping?",
+    "gold_answer": "Subleases or shared accommodation can be found using sites like Blocket or Facebook marketplace or groups in Linköping.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 20,
+    "question": "If my contract starts August 1st but I arrive mid-month, do I pay full rent?",
+    "gold_answer": "Yes, rooms are rented on a full month basis only. If the contract starts on August 1st, you pay rent for the entire month even if you arrive later.",
+    "source": "liu_accommodation",
+    "category": "costs_logistics"
+  },
+  {
+    "id": 21,
+    "question": "How should I collect my keys if I have been allocated a room by LiU?",
+    "gold_answer": "Keys can be collected from the Info Centre during office hours only.",
+    "source": "liu_accommodation",
+    "category": "costs_logistics"
+  },
+  {
+    "id": 22,
+    "question": "What are the four main landlords for student accommodation at LiU?",
+    "gold_answer": "The four main landlords are Heimstaden and Studentbostäder in Linköping, and Studentbo and SBS Studentbostäder in Norrköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 23,
+    "question": "What is Qasa?",
+    "gold_answer": "Qasa is a housing company where you can rent both furnished and unfurnished rooms, available in both Linköping and Norrköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
+  },
+  {
+    "id": 24,
+    "question": "How can I avoid housing scams in Sweden?",
+    "gold_answer": "Be cautious of landlords asking for upfront fees for accommodation that does not exist or cannot be rented. Use official housing company websites and refer to KOMBO's scam prevention guide for advice.",
+    "source": "kombo_scam",
+    "category": "scam_awareness"
+  },
+  {
+    "id": 25,
+    "question": "What is the tip given to prospective students about joining housing queues?",
+    "gold_answer": "It is recommended to start joining queues as soon as you are seriously considering studying at LiU. It does not cost anything and you are not obligated to rent, but having more queue points gives you more accommodation options.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  }
+]

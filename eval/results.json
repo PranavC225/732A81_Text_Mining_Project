@@ -1,0 +1,245 @@
+{
+  "summary": {
+    "n_questions": 25,
+    "rouge1": 0.4447,
+    "rouge2": 0.3001,
+    "rougeL": 0.3993,
+    "bertscore_f1_avg": 0.9029,
+    "per_category": {
+      "costs_logistics": {
+        "avg_bertscore_f1": 0.9336,
+        "n": 3
+      },
+      "emergency_temp": {
+        "avg_bertscore_f1": 0.9345,
+        "n": 3
+      },
+      "exchange_vs_degree": {
+        "avg_bertscore_f1": 0.8952,
+        "n": 3
+      },
+      "housing_types": {
+        "avg_bertscore_f1": 0.8631,
+        "n": 2
+      },
+      "key_landlords": {
+        "avg_bertscore_f1": 0.871,
+        "n": 7
+      },
+      "linkoping_vs_norrkoping": {
+        "avg_bertscore_f1": 0.9212,
+        "n": 2
+      },
+      "queue_system": {
+        "avg_bertscore_f1": 0.9346,
+        "n": 4
+      },
+      "scam_awareness": {
+        "avg_bertscore_f1": 0.8787,
+        "n": 1
+      }
+    }
+  },
+  "detail": [
+    {
+      "id": 1,
+      "category": "queue_system",
+      "question": "How many queue points do you earn per day when registered with a housing company?",
+      "gold_answer": "You earn one queue point per day when registered in the housing queue system.",
+      "predicted": "You receive one queue-point per day after registration.",
+      "bertscore_f1": 0.9365
+    },
+    {
+      "id": 2,
+      "category": "costs_logistics",
+      "question": "What is the approximate starting rent for a student corridor room?",
+      "gold_answer": "The rent starts at approximately SEK 3,900 per month, with electricity, heating and internet included.",
+      "predicted": "The approximate starting rent for a student corridor room is SEK 3,900/month.",
+      "bertscore_f1": 0.9129
+    },
+    {
+      "id": 3,
+      "category": "emergency_temp",
+      "question": "What should I do if I cannot find accommodation before the semester starts?",
+      "gold_answer": "You can stay in temporary accommodation such as youth hostels or Airbnb. KOMBO also offers emergency lodging between 1 August and 30 September for admitted students.",
+      "predicted": "If you cannot find accommodation before the semester starts, it is recommended that you book well in advance. You can also consider staying in temporary accommodation such as youth hostels in Link\u00f6ping and Norrk\u00f6ping. It's also a good idea to reach an agreement with the hostel regarding when and how to pick up your key if you arrive late in the evening.",
+      "bertscore_f1": 0.872
+    },
+    {
+      "id": 4,
+      "category": "queue_system",
+      "question": "What is the maximum number of apartments you can apply for per landlord?",
+      "gold_answer": "You can apply for a maximum of 5 different options per landlord.",
+      "predicted": "You can apply for a maximum of 5 different options per landlord.",
+      "bertscore_f1": 1.0
+    },
+    {
+      "id": 5,
+      "category": "queue_system",
+      "question": "What happens if I decline a housing offer from a landlord?",
+      "gold_answer": "If you decline or do not respond to a housing offer, you risk getting struck off the housing queue and won't be able to register for any other accommodation.",
+      "predicted": "If you decline a housing offer from a landlord, you risk getting struck off the housing queue and won't be able to register for any other accommodation.",
+      "bertscore_f1": 0.9799
+    },
+    {
+      "id": 6,
+      "category": "exchange_vs_degree",
+      "question": "Does Link\u00f6ping University guarantee accommodation for degree students?",
+      "gold_answer": "No, Link\u00f6ping University does not generally offer student accommodation for degree students. They need to join the queue systems for accommodation themselves.",
+      "predicted": "Yes, Link\u00f6ping University guarantees accommodation for certain students. Specifically, it guarantees accommodation for:\n\n* Newly admitted students who have been accepted to at least two semesters at Link\u00f6ping University Campus Norrk\u00f6ping.\n* Exchange students (not applicable to degree students in this context).\n\nFor degree students, the university does not generally offer student accommodation unless you are an exchange student, and even then, it's not explicitly stated that they guarantee accommodation.",
+      "bertscore_f1": 0.8835
+    },
+    {
+      "id": 7,
+      "category": "exchange_vs_degree",
+      "question": "Which housing company has an agreement with LiU for exchange students in Link\u00f6ping?",
+      "gold_answer": "LiU has an agreement with Heimstaden in Link\u00f6ping for exchange student accommodation.",
+      "predicted": "Heimstaden in Link\u00f6ping.",
+      "bertscore_f1": 0.8803
+    },
+    {
+      "id": 8,
+      "category": "exchange_vs_degree",
+      "question": "When will exchange students be notified about their room allocation for the autumn semester?",
+      "gold_answer": "Exchange students arriving for the autumn semester will be notified by May or June.",
+      "predicted": "Exchange students will be notified by email and/or post, but the exact date is not specified in the context. However, it is mentioned that if they are arriving for the autumn semester, they will be notified by May/June.",
+      "bertscore_f1": 0.9217
+    },
+    {
+      "id": 9,
+      "category": "housing_types",
+      "question": "What is a student corridor room and what does it typically include?",
+      "gold_answer": "A student corridor room is usually about 20 square metres with a private bathroom. Several rooms share a kitchen and living room. The room is fully furnished with a bed, desk, lamps and fire alarm. Rent starts at approximately SEK 3,900 per month including electricity, heating and internet.",
+      "predicted": "A student corridor room is a type of accommodation that includes several rooms, usually 20 sqm each, placed in the same corridor or hall. It typically includes:\n\n* A private bathroom\n* Shared kitchen and living room (common area)\n* Fully furnished basic needs such as:\n + Bed\n + Desk\n + Lamps\n + Fire alarm\n\nHowever, you bring your own pillows, sheets, blankets, and kitchen utensils.",
+      "bertscore_f1": 0.8758
+    },
+    {
+      "id": 10,
+      "category": "linkoping_vs_norrkoping",
+      "question": "Can I travel between Link\u00f6ping and Norrk\u00f6ping for free as a LiU student?",
+      "gold_answer": "Yes, you can travel for free between the cities using the LiU campus bus.",
+      "predicted": "I don't have that information.",
+      "bertscore_f1": 0.8562
+    },
+    {
+      "id": 11,
+      "category": "linkoping_vs_norrkoping",
+      "question": "Is it advisable to live in Stockholm and commute to LiU for full-time studies?",
+      "gold_answer": "No, it is not advisable to live in Stockholm or Gothenburg and believe you will be able to study full-time at LiU.",
+      "predicted": "No, it is not advisable to live in Stockholm and believe you will be able to study full-time at LiU.",
+      "bertscore_f1": 0.9863
+    },
+    {
+      "id": 12,
+      "category": "key_landlords",
+      "question": "What is KOMBO and how can it help students?",
+      "gold_answer": "KOMBO is a student-run association at LiU that works with all aspects of student accommodation including legal advocacy, student representation, and advertising private accommodation. It also provides guides to help international students find housing and avoid scams.",
+      "predicted": "Kombo is a student-run association at Link\u00f6ping University that works with all aspects of student accommodation, including legal advocacy, student representation, and advertising private accommodation. It can help students by providing information on finding accommodation, avoiding scams, and offering guides to search for accommodation in Swedish, as well as giving international students an insider's look at finding accommodation.",
+      "bertscore_f1": 0.9467
+    },
+    {
+      "id": 13,
+      "category": "emergency_temp",
+      "question": "Between what dates does KOMBO offer emergency housing?",
+      "gold_answer": "KOMBO offers emergency lodging between 1 August and 30 September for admitted students who have nowhere to stay when the semester starts.",
+      "predicted": "KOMBO offers emergency housing between 1 August to 30 September, specifically for admitted students who have trouble finding a place to live at the beginning of the fall semester.",
+      "bertscore_f1": 0.9622
+    },
+    {
+      "id": 14,
+      "category": "emergency_temp",
+      "question": "Can KOMBO provide emergency lodging for family members of students?",
+      "gold_answer": "No, KOMBO can only help with emergency lodging for admitted students and cannot provide lodging for family members.",
+      "predicted": "No, KOMBO can only help with emergency lodging for admitted students, meaning they will not be able to provide lodging for family members coming with you.",
+      "bertscore_f1": 0.9693
+    },
+    {
+      "id": 15,
+      "category": "key_landlords",
+      "question": "What is Studentbo and where does it operate?",
+      "gold_answer": "Studentbo is a student accommodation provider in Norrk\u00f6ping, provided by Norrk\u00f6ping municipality. It offers accommodation close to the city center and Campus Norrk\u00f6ping.",
+      "predicted": "Studentbo operates in Link\u00f6ping University (LiU) and provides student accommodation.",
+      "bertscore_f1": 0.8862
+    },
+    {
+      "id": 16,
+      "category": "key_landlords",
+      "question": "Does Studentbo offer a housing guarantee for Campus Norrk\u00f6ping students?",
+      "gold_answer": "Yes, Studentbo guarantees accommodation for students accepted to a course or programme on Campus Norrk\u00f6ping, provided they study at least two semesters and do not already live in Norrk\u00f6ping.",
+      "predicted": "I don't have that information. The context only mentions an agreement with Heimstaden in Link\u00f6ping, but does not specifically mention Studentbo as being part of the agreement.",
+      "bertscore_f1": 0.8498
+    },
+    {
+      "id": 17,
+      "category": "key_landlords",
+      "question": "What is Colonia and who is eligible to live there?",
+      "gold_answer": "Colonia is a student complex on Campus Valla that is student-led and arranges activity teams to help international students interact. It is only available to students who have a Swedish personal number.",
+      "predicted": "I don't have that information. The context only mentions Corridor life and living options, but not specifically what Colonia is or who is eligible to live there.",
+      "bertscore_f1": 0.8441
+    },
+    {
+      "id": 18,
+      "category": "key_landlords",
+      "question": "What is St\u00e5ng\u00e5staden?",
+      "gold_answer": "St\u00e5ng\u00e5staden is a municipal housing company in Link\u00f6ping.",
+      "predicted": "I don't have that information. The context only mentions \"St\u00e5ng\u00e5staden\" as a location where you can rent rooms, but it does not provide any additional details about what St\u00e5ng\u00e5staden specifically is.",
+      "bertscore_f1": 0.8469
+    },
+    {
+      "id": 19,
+      "category": "housing_types",
+      "question": "Where can I find subleases or shared accommodation in Link\u00f6ping?",
+      "gold_answer": "Subleases or shared accommodation can be found using sites like Blocket or Facebook marketplace or groups in Link\u00f6ping.",
+      "predicted": "You can search for rented rooms and sublet apartments on the student tenant association's housing agency website, as well as on the municipal housing company's list of provided housing options.",
+      "bertscore_f1": 0.8504
+    },
+    {
+      "id": 20,
+      "category": "costs_logistics",
+      "question": "If my contract starts August 1st but I arrive mid-month, do I pay full rent?",
+      "gold_answer": "Yes, rooms are rented on a full month basis only. If the contract starts on August 1st, you pay rent for the entire month even if you arrive later.",
+      "predicted": "Yes, if your contract starts on August 1st but you arrive mid-month, you still must pay the rent for the whole month.",
+      "bertscore_f1": 0.9316
+    },
+    {
+      "id": 21,
+      "category": "costs_logistics",
+      "question": "How should I collect my keys if I have been allocated a room by LiU?",
+      "gold_answer": "Keys can be collected from the Info Centre during office hours only.",
+      "predicted": "You can collect your keys from the Info Centre during office hours.",
+      "bertscore_f1": 0.9563
+    },
+    {
+      "id": 22,
+      "category": "key_landlords",
+      "question": "What are the four main landlords for student accommodation at LiU?",
+      "gold_answer": "The four main landlords are Heimstaden and Studentbost\u00e4der in Link\u00f6ping, and Studentbo and SBS Studentbost\u00e4der in Norrk\u00f6ping.",
+      "predicted": "I don't have that information. The context only mentions two housing companies, Heimstaden in Link\u00f6ping and Studentbo in Norrk\u00f6ping, but it does not provide a list of four main landlords.",
+      "bertscore_f1": 0.8973
+    },
+    {
+      "id": 23,
+      "category": "key_landlords",
+      "question": "What is Qasa?",
+      "gold_answer": "Qasa is a housing company where you can rent both furnished and unfurnished rooms, available in both Link\u00f6ping and Norrk\u00f6ping.",
+      "predicted": "I don't have that information. The context only mentions \"queue-points system\" in the context of registering with companies for accommodation hunting, but it does not mention anything about a company or organization called \"Qasa\".",
+      "bertscore_f1": 0.8263
+    },
+    {
+      "id": 24,
+      "category": "scam_awareness",
+      "question": "How can I avoid housing scams in Sweden?",
+      "gold_answer": "Be cautious of landlords asking for upfront fees for accommodation that does not exist or cannot be rented. Use official housing company websites and refer to KOMBO's scam prevention guide for advice.",
+      "predicted": "To avoid housing scams in Sweden, follow these steps:\n\n1. Never pay a deposit or the first month's rent before you have seen the apartment in person.\n2. If you can't go yourself, ask a friend or relative to check it out for you.\n\nAdditionally, be cautious of scammers who try to rent out apartments that don't exist or that they don't have access to. Always research and verify the legitimacy of the housing company and landlord before making any payments or commitments.",
+      "bertscore_f1": 0.8787
+    },
+    {
+      "id": 25,
+      "category": "queue_system",
+      "question": "What is the tip given to prospective students about joining housing queues?",
+      "gold_answer": "It is recommended to start joining queues as soon as you are seriously considering studying at LiU. It does not cost anything and you are not obligated to rent, but having more queue points gives you more accommodation options.",
+      "predicted": "Join some queue's today!",
+      "bertscore_f1": 0.8222
+    }
+  ]
+}
