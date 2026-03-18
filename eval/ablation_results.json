@@ -5,10 +5,10 @@
     "chunk_overlap": 80,
     "top_k": 5,
     "n_chunks": 112,
-    "rouge1": 0.4412,
-    "rouge2": 0.2947,
-    "rougeL": 0.4024,
-    "bertscore_f1": 0.9047
+    "rouge1": 0.4642,
+    "rouge2": 0.3039,
+    "rougeL": 0.4129,
+    "bertscore_f1": 0.9088
   },
   {
     "config": "chunk=250 overlap=40 top_k=5",
@@ -16,10 +16,10 @@
     "chunk_overlap": 40,
     "top_k": 5,
     "n_chunks": 240,
-    "rouge1": 0.3303,
-    "rouge2": 0.2177,
-    "rougeL": 0.3044,
-    "bertscore_f1": 0.8874
+    "rouge1": 0.4287,
+    "rouge2": 0.273,
+    "rougeL": 0.3744,
+    "bertscore_f1": 0.9036
   },
   {
     "config": "chunk=500 overlap=80 top_k=8",
@@ -27,10 +27,10 @@
     "chunk_overlap": 80,
     "top_k": 8,
     "n_chunks": 112,
-    "rouge1": 0.4758,
-    "rouge2": 0.3296,
-    "rougeL": 0.4156,
-    "bertscore_f1": 0.9084
+    "rouge1": 0.4228,
+    "rouge2": 0.2856,
+    "rougeL": 0.375,
+    "bertscore_f1": 0.9017
   },
   {
     "config": "chunk=250 overlap=40 top_k=8",
@@ -38,9 +38,9 @@
     "chunk_overlap": 40,
     "top_k": 8,
     "n_chunks": 240,
-    "rouge1": 0.3952,
-    "rouge2": 0.2522,
-    "rougeL": 0.3491,
-    "bertscore_f1": 0.8975
+    "rouge1": 0.4475,
+    "rouge2": 0.2897,
+    "rougeL": 0.3908,
+    "bertscore_f1": 0.9047
   }
 ]

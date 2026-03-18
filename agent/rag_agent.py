@@ -20,7 +20,7 @@ Question: {question}
 
 Answer:"""
 
-def load_chain(top_k: int = 8):
+def load_chain(top_k: int = 5):
     embedder = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         model_kwargs={"device": "cpu"},

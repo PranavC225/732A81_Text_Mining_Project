@@ -1,42 +1,42 @@
 {
   "summary": {
-    "n_questions": 25,
-    "rouge1": 0.4447,
-    "rouge2": 0.3001,
-    "rougeL": 0.3993,
-    "bertscore_f1_avg": 0.9029,
+    "n_questions": 45,
+    "rouge1": 0.4597,
+    "rouge2": 0.3007,
+    "rougeL": 0.4075,
+    "bertscore_f1_avg": 0.9075,
     "per_category": {
       "costs_logistics": {
         "avg_bertscore_f1": 0.9336,
         "n": 3
       },
       "emergency_temp": {
-        "avg_bertscore_f1": 0.9345,
-        "n": 3
+        "avg_bertscore_f1": 0.9366,
+        "n": 5
       },
       "exchange_vs_degree": {
-        "avg_bertscore_f1": 0.8952,
-        "n": 3
+        "avg_bertscore_f1": 0.9118,
+        "n": 6
       },
       "housing_types": {
-        "avg_bertscore_f1": 0.8631,
-        "n": 2
+        "avg_bertscore_f1": 0.9074,
+        "n": 8
       },
       "key_landlords": {
-        "avg_bertscore_f1": 0.871,
-        "n": 7
+        "avg_bertscore_f1": 0.8663,
+        "n": 8
       },
       "linkoping_vs_norrkoping": {
-        "avg_bertscore_f1": 0.9212,
-        "n": 2
-      },
-      "queue_system": {
-        "avg_bertscore_f1": 0.9346,
+        "avg_bertscore_f1": 0.8957,
         "n": 4
       },
+      "queue_system": {
+        "avg_bertscore_f1": 0.935,
+        "n": 7
+      },
       "scam_awareness": {
-        "avg_bertscore_f1": 0.8787,
-        "n": 1
+        "avg_bertscore_f1": 0.8908,
+        "n": 4
       }
     }
   },
@@ -62,8 +62,8 @@
       "category": "emergency_temp",
       "question": "What should I do if I cannot find accommodation before the semester starts?",
       "gold_answer": "You can stay in temporary accommodation such as youth hostels or Airbnb. KOMBO also offers emergency lodging between 1 August and 30 September for admitted students.",
-      "predicted": "If you cannot find accommodation before the semester starts, it is recommended that you book well in advance. You can also consider staying in temporary accommodation such as youth hostels in Link\u00f6ping and Norrk\u00f6ping. It's also a good idea to reach an agreement with the hostel regarding when and how to pick up your key if you arrive late in the evening.",
-      "bertscore_f1": 0.872
+      "predicted": "You might need to stay in temporary accommodation, such as youth hostels in Link\u00f6ping or Norrk\u00f6ping. It is recommended that you book well in advance and reach an agreement with the hostel regarding when and how to pick up your key if you arrive late in the evening.",
+      "bertscore_f1": 0.8782
     },
     {
       "id": 4,
@@ -86,8 +86,8 @@
       "category": "exchange_vs_degree",
       "question": "Does Link\u00f6ping University guarantee accommodation for degree students?",
       "gold_answer": "No, Link\u00f6ping University does not generally offer student accommodation for degree students. They need to join the queue systems for accommodation themselves.",
-      "predicted": "Yes, Link\u00f6ping University guarantees accommodation for certain students. Specifically, it guarantees accommodation for:\n\n* Newly admitted students who have been accepted to at least two semesters at Link\u00f6ping University Campus Norrk\u00f6ping.\n* Exchange students (not applicable to degree students in this context).\n\nFor degree students, the university does not generally offer student accommodation unless you are an exchange student, and even then, it's not explicitly stated that they guarantee accommodation.",
-      "bertscore_f1": 0.8835
+      "predicted": "Yes, Link\u00f6ping University guarantees accommodation for certain students. Specifically, it guarantees accommodation for:\n\n* Newly admitted students who meet the requirements and are studying at least two semesters on Campus Norrk\u00f6ping.\n* Exchange students.\n\nFor all other degree students, including international students (except exchange students), Link\u00f6ping University does not guarantee accommodation and instead advises them to join the queue systems for accommodation.",
+      "bertscore_f1": 0.902
     },
     {
       "id": 7,
@@ -102,8 +102,8 @@
       "category": "exchange_vs_degree",
       "question": "When will exchange students be notified about their room allocation for the autumn semester?",
       "gold_answer": "Exchange students arriving for the autumn semester will be notified by May or June.",
-      "predicted": "Exchange students will be notified by email and/or post, but the exact date is not specified in the context. However, it is mentioned that if they are arriving for the autumn semester, they will be notified by May/June.",
-      "bertscore_f1": 0.9217
+      "predicted": "Exchange students will be notified by email and/or post, but the exact date is not specified in the context. However, it is mentioned that if they are arriving for the autumn semester, notification should occur \"at the latest\" by May/June.",
+      "bertscore_f1": 0.9141
     },
     {
       "id": 9,
@@ -126,8 +126,8 @@
       "category": "linkoping_vs_norrkoping",
       "question": "Is it advisable to live in Stockholm and commute to LiU for full-time studies?",
       "gold_answer": "No, it is not advisable to live in Stockholm or Gothenburg and believe you will be able to study full-time at LiU.",
-      "predicted": "No, it is not advisable to live in Stockholm and believe you will be able to study full-time at LiU.",
-      "bertscore_f1": 0.9863
+      "predicted": "No, it is not advisable to live in Stockholm or Gothenburg and believe you will be able to study full-time at LiU.",
+      "bertscore_f1": 1.0
     },
     {
       "id": 12,
@@ -142,8 +142,8 @@
       "category": "emergency_temp",
       "question": "Between what dates does KOMBO offer emergency housing?",
       "gold_answer": "KOMBO offers emergency lodging between 1 August and 30 September for admitted students who have nowhere to stay when the semester starts.",
-      "predicted": "KOMBO offers emergency housing between 1 August to 30 September, specifically for admitted students who have trouble finding a place to live at the beginning of the fall semester.",
-      "bertscore_f1": 0.9622
+      "predicted": "KOMBO offers emergency housing between August 1st to September 30th, specifically at the beginning of the fall semester.",
+      "bertscore_f1": 0.9313
     },
     {
       "id": 14,
@@ -158,8 +158,8 @@
       "category": "key_landlords",
       "question": "What is Studentbo and where does it operate?",
       "gold_answer": "Studentbo is a student accommodation provider in Norrk\u00f6ping, provided by Norrk\u00f6ping municipality. It offers accommodation close to the city center and Campus Norrk\u00f6ping.",
-      "predicted": "Studentbo operates in Link\u00f6ping University (LiU) and provides student accommodation.",
-      "bertscore_f1": 0.8862
+      "predicted": "Studentbo appears to be a student accommodation provider or a housing service. The context doesn't specify exactly what Studentbo is, but it mentions that the rent can be paid with the rental invoice via ChangeGroup at Drottninggatan 66 in Norrk\u00f6ping. It also recommends using KOMBO for finding and renting accommodation.",
+      "bertscore_f1": 0.8786
     },
     {
       "id": 16,
@@ -174,8 +174,8 @@
       "category": "key_landlords",
       "question": "What is Colonia and who is eligible to live there?",
       "gold_answer": "Colonia is a student complex on Campus Valla that is student-led and arranges activity teams to help international students interact. It is only available to students who have a Swedish personal number.",
-      "predicted": "I don't have that information. The context only mentions Corridor life and living options, but not specifically what Colonia is or who is eligible to live there.",
-      "bertscore_f1": 0.8441
+      "predicted": "I don't have that information.",
+      "bertscore_f1": 0.8313
     },
     {
       "id": 18,
@@ -222,24 +222,184 @@
       "category": "key_landlords",
       "question": "What is Qasa?",
       "gold_answer": "Qasa is a housing company where you can rent both furnished and unfurnished rooms, available in both Link\u00f6ping and Norrk\u00f6ping.",
-      "predicted": "I don't have that information. The context only mentions \"queue-points system\" in the context of registering with companies for accommodation hunting, but it does not mention anything about a company or organization called \"Qasa\".",
-      "bertscore_f1": 0.8263
+      "predicted": "I don't have that information. The provided context only mentions \"queue-points system\" in relation to registering with companies for accommodation hunting, but it does not mention anything about a company or service called \"Qasa\".",
+      "bertscore_f1": 0.8262
     },
     {
       "id": 24,
       "category": "scam_awareness",
       "question": "How can I avoid housing scams in Sweden?",
       "gold_answer": "Be cautious of landlords asking for upfront fees for accommodation that does not exist or cannot be rented. Use official housing company websites and refer to KOMBO's scam prevention guide for advice.",
-      "predicted": "To avoid housing scams in Sweden, follow these steps:\n\n1. Never pay a deposit or the first month's rent before you have seen the apartment in person.\n2. If you can't go yourself, ask a friend or relative to check it out for you.\n\nAdditionally, be cautious of scammers who try to rent out apartments that don't exist or that they don't have access to. Always research and verify the legitimacy of the housing company and landlord before making any payments or commitments.",
-      "bertscore_f1": 0.8787
+      "predicted": "To avoid housing scams in Sweden, follow these steps:\n\n1. Never pay a deposit or the first month's rent before you have seen the apartment in person.\n2. If you can't go yourself, ask a friend or relative to check it out for you.\n\nAdditionally, be cautious of scammers who try to rent out apartments that don't exist or that they don't have access to. Always research and verify the legitimacy of the housing company and landlord before applying or paying any fees.",
+      "bertscore_f1": 0.8796
     },
     {
       "id": 25,
       "category": "queue_system",
       "question": "What is the tip given to prospective students about joining housing queues?",
       "gold_answer": "It is recommended to start joining queues as soon as you are seriously considering studying at LiU. It does not cost anything and you are not obligated to rent, but having more queue points gives you more accommodation options.",
-      "predicted": "Join some queue's today!",
-      "bertscore_f1": 0.8222
+      "predicted": "The tip given to prospective students is: \"We recommend that all prospective students who are very intent on studying at LiU should start joining queues after reading this article. It does not need to cost you anything and you are not obligated to rent a property but if you start studying at LiU you will have more points in the system.\"",
+      "bertscore_f1": 0.9113
+    },
+    {
+      "id": 26,
+      "category": "housing_types",
+      "question": "What items are typically included in a furnished student corridor room?",
+      "gold_answer": "A furnished corridor room includes a bed, desk, lamps and fire alarm. You need to bring your own pillows, sheets, blankets and kitchen utensils.",
+      "predicted": "According to the context, a furnished student corridor room includes basic furniture such as:\n\n* Bed\n* Desk\n* Lamps\n* Fire alarm\n\nHowever, you bring your own pillows, sheets, blankets, and kitchen utensils.",
+      "bertscore_f1": 0.9058
+    },
+    {
+      "id": 27,
+      "category": "housing_types",
+      "question": "Is there a shared kitchen in student corridor accommodation?",
+      "gold_answer": "Yes, corridor rooms share a kitchen and living room with other students in the same corridor. You will have your own part of a fridge and freezer.",
+      "predicted": "Yes, several rooms are often placed in the same corridor or hall, with a shared kitchen and living room.",
+      "bertscore_f1": 0.9141
+    },
+    {
+      "id": 28,
+      "category": "housing_types",
+      "question": "How large is a typical student corridor room?",
+      "gold_answer": "A student corridor room is usually about 20 square metres and includes a private bathroom.",
+      "predicted": "A typical student corridor room is about 20 sqm.",
+      "bertscore_f1": 0.9506
+    },
+    {
+      "id": 29,
+      "category": "housing_types",
+      "question": "Can I apply for regular apartments as a student, not just student-specific housing?",
+      "gold_answer": "Yes, while some companies have student-specific queues, you can also apply for the same apartments as a private citizen through several housing companies.",
+      "predicted": "Yes, you can apply for regular apartments as a student, not just student-specific housing. You can also look for private landlords through the official list of landlords provided by the municipalities of each city or on private advertising sites.",
+      "bertscore_f1": 0.9058
+    },
+    {
+      "id": 30,
+      "category": "housing_types",
+      "question": "What is the advantage of finding a larger apartment as a student?",
+      "gold_answer": "It may be easier to find a larger apartment and look for a roommate when the semester starts, as smaller apartments are often more popular.",
+      "predicted": "Finding a larger apartment allows you to advertise for residents yourself, making it easier to find a roommate.",
+      "bertscore_f1": 0.9048
+    },
+    {
+      "id": 31,
+      "category": "housing_types",
+      "question": "How do private landlords typically choose tenants compared to housing companies?",
+      "gold_answer": "Private landlords often do not use queues. They rent to whoever is first to apply or by reviewing applications individually.",
+      "predicted": "Private landlords typically don't use queues to choose applicants but will rent available rooms within an apartment or a house to whoever is first to apply or by reviewing applications individually.",
+      "bertscore_f1": 0.9517
+    },
+    {
+      "id": 32,
+      "category": "queue_system",
+      "question": "When should I start looking for accommodation at LiU?",
+      "gold_answer": "You should start looking for accommodation as soon as you seriously intend to study at Link\u00f6ping University. The sooner you join waiting lists, the more accommodation options you will have.",
+      "predicted": "You should start looking for accommodation as soon as you seriously intend to study at Link\u00f6ping University (LiU).",
+      "bertscore_f1": 0.9517
+    },
+    {
+      "id": 33,
+      "category": "queue_system",
+      "question": "Why do local Swedish students have an advantage in the housing queue?",
+      "gold_answer": "Local students often sign up years in advance, which means they accumulate more queue points and get the first pick of the best and cheapest apartments.",
+      "predicted": "I don't have that information. The context only mentions that international students need to join the queue systems for accommodation, but it doesn't provide any information about why local Swedish students might have an advantage.",
+      "bertscore_f1": 0.8561
+    },
+    {
+      "id": 34,
+      "category": "queue_system",
+      "question": "Are you obligated to rent a property after joining a housing queue?",
+      "gold_answer": "No, you are not obligated to rent a property by joining the queue. It does not need to cost you anything to register.",
+      "predicted": "No, you are not obligated to rent a property after joining a housing queue. You can choose to decline the offer or wait until your turn in the queue. However, if you join a housing queue and do not respond or decline the offer, you risk getting struck off the queue and won't be able to register for any other accommodation.",
+      "bertscore_f1": 0.9097
+    },
+    {
+      "id": 35,
+      "category": "exchange_vs_degree",
+      "question": "What happens if there are more exchange student applicants than available rooms at LiU?",
+      "gold_answer": "If there are more applicants than rooms, priority will be given to students whose application forms were received first.",
+      "predicted": "If there are more exchange student applicants than available rooms at LiU, priority will be given to students whose application forms were received first.",
+      "bertscore_f1": 0.9723
+    },
+    {
+      "id": 36,
+      "category": "exchange_vs_degree",
+      "question": "Which housing company does LiU have an agreement with in Norrk\u00f6ping for exchange students?",
+      "gold_answer": "LiU has an agreement with Studentbo in Norrk\u00f6ping for exchange student accommodation.",
+      "predicted": "Studentbo.",
+      "bertscore_f1": 0.8427
+    },
+    {
+      "id": 37,
+      "category": "exchange_vs_degree",
+      "question": "When will exchange students arriving for the spring semester be notified about room allocation?",
+      "gold_answer": "Exchange students arriving for the spring semester will be notified by November or December.",
+      "predicted": "Exchange students arriving for the spring semester will be notified about room allocation by post and email by November/December.",
+      "bertscore_f1": 0.9593
+    },
+    {
+      "id": 38,
+      "category": "emergency_temp",
+      "question": "What temporary accommodation options exist if I have not found housing when the semester starts?",
+      "gold_answer": "You can stay in youth hostels in Link\u00f6ping or Norrk\u00f6ping, or use short-term solutions such as Airbnb or couchsurfing. It is recommended to book well in advance as it can be difficult to get a room right before term starts.",
+      "predicted": "Youth hostels in both Link\u00f6ping and Norrk\u00f6ping. It is recommended that you book well in advance, especially before the term starts.",
+      "bertscore_f1": 0.9299
+    },
+    {
+      "id": 39,
+      "category": "emergency_temp",
+      "question": "Is there a charge for bed linen in youth hostels in Link\u00f6ping?",
+      "gold_answer": "There is often a charge for bed linen in youth hostels, so it is recommended to bring your own to save money.",
+      "predicted": "Yes, there is often a charge for bed linen in youth hostels, so it's recommended to bring your own if you want to save some money.",
+      "bertscore_f1": 0.9744
+    },
+    {
+      "id": 40,
+      "category": "scam_awareness",
+      "question": "What are common signs of a housing scam in Sweden?",
+      "gold_answer": "A common scam involves tenants being tricked into paying an upfront fee for accommodation that does not exist or cannot be rented. Rental frauds have become increasingly common in recent years.",
+      "predicted": "Unfortunately, I don't have that information. The context only provides general advice on how to avoid housing scams and warning about the increasing occurrence of rental frauds, but it doesn't specifically list common signs of a housing scam in Sweden.",
+      "bertscore_f1": 0.8634
+    },
+    {
+      "id": 41,
+      "category": "scam_awareness",
+      "question": "Which student association at LiU provides a scam prevention guide for housing?",
+      "gold_answer": "KOMBO, the student tenant association at LiU, provides a scam prevention guide called 'Don't get scammed' to help students avoid housing fraud.",
+      "predicted": "KOMBO, a student-run association at LiU, has created guides to help international students find accommodation and avoid scams.",
+      "bertscore_f1": 0.9441
+    },
+    {
+      "id": 42,
+      "category": "scam_awareness",
+      "question": "Should I be extra cautious about housing scams as an international student?",
+      "gold_answer": "Yes, students trying to secure accommodation before arriving for their studies have been caught up in scams specifically targeting foreign students.",
+      "predicted": "Yes, as an international student, you should be extra cautious about housing scams. The context mentions that scammers often exploit students' need for housing before the semester begins, and they frequently try to rent out apartments that don't exist or that they don't have access to. To avoid falling victim to such scams, it's recommended to never pay a deposit or the first month's rent before seeing the apartment in person, and to apply for accommodation after receiving your admission letter.",
+      "bertscore_f1": 0.8763
+    },
+    {
+      "id": 43,
+      "category": "linkoping_vs_norrkoping",
+      "question": "Can I study at LiU from either Link\u00f6ping or Norrk\u00f6ping campus?",
+      "gold_answer": "Yes, students can choose to live in either campus city. You can also use the LiU campus bus to travel between the cities for free, and utilise facilities like the library and study rooms at either campus.",
+      "predicted": "Yes, you can study at LiU from either the Link\u00f6ping or Norrk\u00f6ping campuses. The text mentions that students could choose to live in either campus city, and also that some courses may be taught on one campus while others are taught on the other.",
+      "bertscore_f1": 0.8961
+    },
+    {
+      "id": 44,
+      "category": "linkoping_vs_norrkoping",
+      "question": "What factors should I consider when deciding between living in Link\u00f6ping or Norrk\u00f6ping?",
+      "gold_answer": "A key factor is which campus your studies are taught on. You should also consider how far you want to travel each day. You can live in either city and travel between them for free on the LiU campus bus.",
+      "predicted": "I don't have that information.",
+      "bertscore_f1": 0.8305
+    },
+    {
+      "id": 45,
+      "category": "key_landlords",
+      "question": "What is K2A and where is it located?",
+      "gold_answer": "K2A offers 90 newly built student apartments located in Vallastaden, Link\u00f6ping.",
+      "predicted": "I don't have that information. The context only mentions Kombo's office location (HusEtt, Campus Valla, Link\u00f6ping) but does not provide any information about what \"K2A\" refers to.",
+      "bertscore_f1": 0.8536
     }
   ]
 }

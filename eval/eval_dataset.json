@@ -173,5 +173,145 @@
     "gold_answer": "It is recommended to start joining queues as soon as you are seriously considering studying at LiU. It does not cost anything and you are not obligated to rent, but having more queue points gives you more accommodation options.",
     "source": "liu_accommodation",
     "category": "queue_system"
+  },
+  {
+    "id": 26,
+    "question": "What items are typically included in a furnished student corridor room?",
+    "gold_answer": "A furnished corridor room includes a bed, desk, lamps and fire alarm. You need to bring your own pillows, sheets, blankets and kitchen utensils.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 27,
+    "question": "Is there a shared kitchen in student corridor accommodation?",
+    "gold_answer": "Yes, corridor rooms share a kitchen and living room with other students in the same corridor. You will have your own part of a fridge and freezer.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 28,
+    "question": "How large is a typical student corridor room?",
+    "gold_answer": "A student corridor room is usually about 20 square metres and includes a private bathroom.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 29,
+    "question": "Can I apply for regular apartments as a student, not just student-specific housing?",
+    "gold_answer": "Yes, while some companies have student-specific queues, you can also apply for the same apartments as a private citizen through several housing companies.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 30,
+    "question": "What is the advantage of finding a larger apartment as a student?",
+    "gold_answer": "It may be easier to find a larger apartment and look for a roommate when the semester starts, as smaller apartments are often more popular.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 31,
+    "question": "How do private landlords typically choose tenants compared to housing companies?",
+    "gold_answer": "Private landlords often do not use queues. They rent to whoever is first to apply or by reviewing applications individually.",
+    "source": "liu_accommodation",
+    "category": "housing_types"
+  },
+  {
+    "id": 32,
+    "question": "When should I start looking for accommodation at LiU?",
+    "gold_answer": "You should start looking for accommodation as soon as you seriously intend to study at Linköping University. The sooner you join waiting lists, the more accommodation options you will have.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 33,
+    "question": "Why do local Swedish students have an advantage in the housing queue?",
+    "gold_answer": "Local students often sign up years in advance, which means they accumulate more queue points and get the first pick of the best and cheapest apartments.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 34,
+    "question": "Are you obligated to rent a property after joining a housing queue?",
+    "gold_answer": "No, you are not obligated to rent a property by joining the queue. It does not need to cost you anything to register.",
+    "source": "liu_accommodation",
+    "category": "queue_system"
+  },
+  {
+    "id": 35,
+    "question": "What happens if there are more exchange student applicants than available rooms at LiU?",
+    "gold_answer": "If there are more applicants than rooms, priority will be given to students whose application forms were received first.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 36,
+    "question": "Which housing company does LiU have an agreement with in Norrköping for exchange students?",
+    "gold_answer": "LiU has an agreement with Studentbo in Norrköping for exchange student accommodation.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 37,
+    "question": "When will exchange students arriving for the spring semester be notified about room allocation?",
+    "gold_answer": "Exchange students arriving for the spring semester will be notified by November or December.",
+    "source": "liu_accommodation",
+    "category": "exchange_vs_degree"
+  },
+  {
+    "id": 38,
+    "question": "What temporary accommodation options exist if I have not found housing when the semester starts?",
+    "gold_answer": "You can stay in youth hostels in Linköping or Norrköping, or use short-term solutions such as Airbnb or couchsurfing. It is recommended to book well in advance as it can be difficult to get a room right before term starts.",
+    "source": "liu_accommodation",
+    "category": "emergency_temp"
+  },
+  {
+    "id": 39,
+    "question": "Is there a charge for bed linen in youth hostels in Linköping?",
+    "gold_answer": "There is often a charge for bed linen in youth hostels, so it is recommended to bring your own to save money.",
+    "source": "liu_accommodation",
+    "category": "emergency_temp"
+  },
+  {
+    "id": 40,
+    "question": "What are common signs of a housing scam in Sweden?",
+    "gold_answer": "A common scam involves tenants being tricked into paying an upfront fee for accommodation that does not exist or cannot be rented. Rental frauds have become increasingly common in recent years.",
+    "source": "liu_accommodation",
+    "category": "scam_awareness"
+  },
+  {
+    "id": 41,
+    "question": "Which student association at LiU provides a scam prevention guide for housing?",
+    "gold_answer": "KOMBO, the student tenant association at LiU, provides a scam prevention guide called 'Don't get scammed' to help students avoid housing fraud.",
+    "source": "kombo_scam",
+    "category": "scam_awareness"
+  },
+  {
+    "id": 42,
+    "question": "Should I be extra cautious about housing scams as an international student?",
+    "gold_answer": "Yes, students trying to secure accommodation before arriving for their studies have been caught up in scams specifically targeting foreign students.",
+    "source": "liu_accommodation",
+    "category": "scam_awareness"
+  },
+  {
+    "id": 43,
+    "question": "Can I study at LiU from either Linköping or Norrköping campus?",
+    "gold_answer": "Yes, students can choose to live in either campus city. You can also use the LiU campus bus to travel between the cities for free, and utilise facilities like the library and study rooms at either campus.",
+    "source": "liu_accommodation",
+    "category": "linkoping_vs_norrkoping"
+  },
+  {
+    "id": 44,
+    "question": "What factors should I consider when deciding between living in Linköping or Norrköping?",
+    "gold_answer": "A key factor is which campus your studies are taught on. You should also consider how far you want to travel each day. You can live in either city and travel between them for free on the LiU campus bus.",
+    "source": "liu_accommodation",
+    "category": "linkoping_vs_norrkoping"
+  },
+  {
+    "id": 45,
+    "question": "What is K2A and where is it located?",
+    "gold_answer": "K2A offers 90 newly built student apartments located in Vallastaden, Linköping.",
+    "source": "liu_accommodation",
+    "category": "key_landlords"
   }
 ]
