@@ -1,0 +1,26 @@
+# Data files - mounted as volumes
+data/
+report/figures/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Notebooks - mounted as volume
+notebooks/
+
+# git
+*.git/
+.gitignore
+
+# Env files
+.env
+*.env
+
+# OS artifacts
+.DS_Store
+Thumbs.db

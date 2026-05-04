@@ -33,21 +33,34 @@ services:
       - ollama
       - chromadb
     environment:
-      - OLLAMA_HOST=http://ollama:11434
+      # - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_HOST=http://host.docker.internal:11434
       - CHROMA_HOST=http://chromadb:8000
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
     working_dir: /workspace
     command: tail -f /dev/null
 
-  jupyter:
-    image: jupyter/scipy-notebook:latest
-    container_name: jupyter
-    ports:
-      - "8888:8888"
-    volumes:
-      - .:/home/jovyan/work
-    environment:
-      - JUPYTER_ENABLE_LAB=yes
-    restart: unless-stopped
+  # jupyter:
+  #   image: python:3.11-slim
+  #   container_name: jupyter
+  #   ports:
+  #     - "8888:8888"
+  #   volumes:
+  #     - .:/home/jovyan/work
+  #   command: >
+  #     bash -c "pip install --no-cache-dir notebook pandas numpy matplotlib && jupyter lab --ip=0.0.0.0 --port=8888 --allow-root"
+
+  # jupyter:
+  #   image: jupyter/scipy-notebook:latest
+  #   container_name: jupyter
+  #   ports:
+  #     - "8888:8888"
+  #   volumes:
+  #     - .:/home/jovyan/work
+  #   environment:
+  #     - JUPYTER_ENABLE_LAB=yes
+  #   restart: unless-stopped
 
 volumes:
   ollama_data:
