@@ -52,7 +52,11 @@ python eval/ablation.py           # parameter sweep
 
 ## Results
 
-Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set (`eval/eval_dataset.json`). Overlap tracks chunk size throughout (500→80, 250→40), so it's folded into the chunk column. Raw numbers in `eval/ablation_results.json`.
+Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set (`eval/eval_dataset.json`). The headline result is an *interaction* — the effect of retrieving more depends entirely on how the corpus was chunked:
+
+![Raising top_k from 5 to 8 raises ROUGE-1 at chunk=250 and lowers it at chunk=500](report/figures/topk-chunk-interaction.svg)
+
+Overlap tracks chunk size throughout (500→80, 250→40), so it's folded into the chunk column. Raw numbers in `eval/ablation_results.json`.
 
 | Chunk | top_k | Chunks indexed | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore F1 |
 |---|---|---|---|---|---|---|
@@ -63,7 +67,7 @@ Four configurations, sweeping chunk size × overlap × retrieval depth, each sco
 
 **The surprising result: retrieving more made it worse.** Holding chunking fixed at 500/80 and raising `top_k` from 5 to 8 dropped every metric — ROUGE-1 0.4642 → 0.4228, ROUGE-L 0.4129 → 0.3750, BERTScore 0.9088 → 0.9017. This is the one clean single-variable contrast in the sweep, and it runs against the assumption that more retrieved context can only help; the likely mechanism is that the extra chunks dilute the prompt with near-miss passages the 3B model then has to arbitrate between.
 
-At chunk=250 the same `top_k` bump moved the other way (ROUGE-1 0.4287 → 0.4475), suggesting the governing quantity is *total retrieved context* rather than `k` alone — both mid-budget configs beat both extremes on all four metrics. Four configs and one run each, so treat that as a hypothesis to test, not a result.
+At chunk=250 the same `top_k` bump moved the other way (ROUGE-1 0.4287 → 0.4475), and that reversal is not a one-metric artifact — it holds on all four: ROUGE-2 (+0.0167 vs −0.0183), ROUGE-L (+0.0164 vs −0.0379), BERTScore (+0.0011 vs −0.0071). `top_k` therefore has no context-independent direction here; the governing quantity looks like *total retrieved context* — the product of the two knobs — rather than `k` alone. Four configs and one run each, so treat it as a hypothesis to test rather than a result; the consistency across four independent metrics is what makes it worth stating.
 
 **Caveats:** 45 eval questions, single run per config, one local model (`llama3.2:3b`), four configurations. The BERTScore spread across all four is 0.007 — too small to defend the tail of the ranking without additional seeds.
 

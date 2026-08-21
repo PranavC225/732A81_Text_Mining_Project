@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400" role="img" aria-label="Line chart showing that raising top_k from 5 to 8 increases ROUGE-1 at chunk size 250 but decreases it at chunk size 500.">
+  <style>
+    .t   { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .ttl { font-size: 17px; font-weight: 700; fill: #12181f; }
+    .sub { font-size: 12px; fill: #64707d; }
+    .ax  { font-size: 11px; fill: #64707d; }
+    .val { font-size: 11px; fill: #64707d; }
+    .ser { font-size: 12.5px; font-weight: 700; }
+    .fn  { font-size: 10.5px; fill: #7c8794; }
+  </style>
+
+  <rect x="0" y="0" width="700" height="400" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="699" height="399" fill="none" stroke="#e2e6ea"/>
+
+  <text class="t ttl" x="24" y="34">More retrieval helps at small chunks — and hurts at large ones</text>
+  <text class="t sub" x="24" y="56">ROUGE-1 across the 732A81 ablation sweep. The same direction change holds on all four metrics.</text>
+
+  <!-- gridlines + y ticks: 0.42 -> y=300, 0.47 -> y=80 -->
+  <g>
+    <line x1="130" y1="300" x2="470" y2="300" stroke="#eef1f4"/>
+    <line x1="130" y1="256" x2="470" y2="256" stroke="#eef1f4"/>
+    <line x1="130" y1="212" x2="470" y2="212" stroke="#eef1f4"/>
+    <line x1="130" y1="168" x2="470" y2="168" stroke="#eef1f4"/>
+    <line x1="130" y1="124" x2="470" y2="124" stroke="#eef1f4"/>
+    <line x1="130" y1="80"  x2="470" y2="80"  stroke="#eef1f4"/>
+    <text class="t ax" x="118" y="304" text-anchor="end">0.42</text>
+    <text class="t ax" x="118" y="260" text-anchor="end">0.43</text>
+    <text class="t ax" x="118" y="216" text-anchor="end">0.44</text>
+    <text class="t ax" x="118" y="172" text-anchor="end">0.45</text>
+    <text class="t ax" x="118" y="128" text-anchor="end">0.46</text>
+    <text class="t ax" x="118" y="84"  text-anchor="end">0.47</text>
+  </g>
+
+  <line x1="130" y1="80" x2="130" y2="300" stroke="#c8cfd6"/>
+  <line x1="130" y1="300" x2="470" y2="300" stroke="#c8cfd6"/>
+
+  <text class="t ax" x="52" y="190" text-anchor="middle" transform="rotate(-90 52 190)">ROUGE-1</text>
+
+  <text class="t ax" x="200" y="322" text-anchor="middle">top_k = 5</text>
+  <text class="t ax" x="400" y="322" text-anchor="middle">top_k = 8</text>
+  <text class="t ax" x="300" y="345" text-anchor="middle">retrieval depth</text>
+
+  <!-- chunk = 500: 0.4642 -> 0.4228 (falls) -->
+  <line x1="200" y1="105.5" x2="400" y2="287.7" stroke="#c8442f" stroke-width="2.5"/>
+  <circle cx="200" cy="105.5" r="5" fill="#c8442f" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="400" cy="287.7" r="5" fill="#c8442f" stroke="#ffffff" stroke-width="1.5"/>
+  <text class="t val" x="200" y="94" text-anchor="middle">0.4642</text>
+  <text class="t ser" x="414" y="285" fill="#c8442f">chunk = 500</text>
+  <text class="t val" x="414" y="301">0.4228 &#160;&#160;&#8722;0.0414</text>
+
+  <!-- chunk = 250: 0.4287 -> 0.4475 (rises) -->
+  <line x1="200" y1="261.7" x2="400" y2="179.0" stroke="#1f6f9c" stroke-width="2.5"/>
+  <circle cx="200" cy="261.7" r="5" fill="#1f6f9c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="400" cy="179.0" r="5" fill="#1f6f9c" stroke="#ffffff" stroke-width="1.5"/>
+  <text class="t val" x="200" y="280" text-anchor="middle">0.4287</text>
+  <text class="t ser" x="414" y="176" fill="#1f6f9c">chunk = 250</text>
+  <text class="t val" x="414" y="192">0.4475 &#160;&#160;+0.0188</text>
+
+  <text class="t fn" x="24" y="381">y-axis truncated to 0.42–0.47 to show the effect. 45 eval questions, one run per config, llama3.2:3b.</text>
+</svg>
