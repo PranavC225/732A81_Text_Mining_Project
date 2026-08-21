@@ -52,14 +52,14 @@ python eval/ablation.py           # parameter sweep
 
 ## Results
 
-Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set (`eval/eval_dataset.json`). Raw numbers in `eval/ablation_results.json`.
+Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set (`eval/eval_dataset.json`). Overlap tracks chunk size throughout (500→80, 250→40), so it's folded into the chunk column. Raw numbers in `eval/ablation_results.json`.
 
-| Chunk | Overlap | top_k | Chunks indexed | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore F1 |
-|---|---|---|---|---|---|---|---|
-| **500** | **80** | **5** | 112 | **0.4642** | **0.3039** | **0.4129** | **0.9088** |
-| 250 | 40 | 8 | 240 | 0.4475 | 0.2897 | 0.3908 | 0.9047 |
-| 250 | 40 | 5 | 240 | 0.4287 | 0.2730 | 0.3744 | 0.9036 |
-| 500 | 80 | 8 | 112 | 0.4228 | 0.2856 | 0.3750 | 0.9017 |
+| Chunk | top_k | Chunks indexed | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore F1 |
+|---|---|---|---|---|---|---|
+| **500** | **5** | 112 | **0.4642** | **0.3039** | **0.4129** | **0.9088** |
+| 250 | 8 | 240 | 0.4475 | 0.2897 | 0.3908 | 0.9047 |
+| 250 | 5 | 240 | 0.4287 | 0.2730 | 0.3744 | 0.9036 |
+| 500 | 8 | 112 | 0.4228 | 0.2856 | 0.3750 | 0.9017 |
 
 **The surprising result: retrieving more made it worse.** Holding chunking fixed at 500/80 and raising `top_k` from 5 to 8 dropped every metric — ROUGE-1 0.4642 → 0.4228, ROUGE-L 0.4129 → 0.3750, BERTScore 0.9088 → 0.9017. This is the one clean single-variable contrast in the sweep, and it runs against the assumption that more retrieved context can only help; the likely mechanism is that the extra chunks dilute the prompt with near-miss passages the 3B model then has to arbitrate between.
 
